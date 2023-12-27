@@ -85,3 +85,7 @@ class CNN:
         test_loss, test_acc = self.model.evaluate(x_test, y_test)
         return test_loss, test_acc
 ```
+
+ 
+# week10 [ ~~ 12/6]
+> 최종발표
