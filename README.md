@@ -97,6 +97,10 @@ Risk 해결방안으로 이미지 원-핫 인코딩(One-hot encoding)을 통해 
 Result
 ![image](https://github.com/KOO-96/Capston_Suwon-univ./assets/113090595/f06bdfb7-e756-4ef4-8865-cf9d01a97e25)
 
- 
+Tkinter GUI(피그마)를 활용한 UI/UX페이지 생성안 예시  
+![image](https://github.com/KOO-96/Capston_Suwon-univ.-1/assets/113090595/0337602e-963e-4ce7-b4aa-426bbdb546ff)
+
+Feedback : 무엇을 하고싶은지 모르겠다. 실제 사용이 가능한 모델 연구 vs 단순히 결과만을 위한 프로젝트
+
 # 최종발표 [ ~~ 12/6]
 > ![최종발표]()
