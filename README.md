@@ -20,7 +20,8 @@ week2 [9/6 ~ 9/13]
  
 objective: 패션 아이템을 활용한 추천 알고리즘  
 data : Fashion mnist dataset  
-method : CNN딥러닝을 이용한 classification  
+
+CNN딥러닝을 이용한 classification  
 result : 20epoch, 91%  
 
 ---
@@ -85,7 +86,17 @@ class CNN:
         test_loss, test_acc = self.model.evaluate(x_test, y_test)
         return test_loss, test_acc
 ```
+시각화를 통해 테스트 이미지의 예측값(실제값)을 확인
+![image](https://github.com/KOO-96/Capston_Suwon-univ./assets/113090595/a081e1dd-599d-4deb-9d4a-da33294c78f2)
+
+학부생 딥러닝(자연어처리방식)에서 배운 것을 활용해보고자 벡터화를 통해 유사행렬을 만든 다음 유사한 이미지를 추출  
+Risk : 세션 종료로 인한 실행 불가능.   
+
+Risk 해결방안으로 이미지 원-핫 인코딩(One-hot encoding)을 통해 확인 -> Risk: 1과 0 값으로만 나온다, 정답이 틀린 경우도 1로 값이 나오는 경우가 발생.
+
+Result
+![image](https://github.com/KOO-96/Capston_Suwon-univ./assets/113090595/f06bdfb7-e756-4ef4-8865-cf9d01a97e25)
 
  
 # week10 [ ~~ 12/6]
-> 최종발표
+> ![최종발표]()
