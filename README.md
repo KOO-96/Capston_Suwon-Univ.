@@ -28,7 +28,7 @@ Result : 20epoch, 91%
 ### fashion_mnist dataset이란?
 ![fashion_mnist dataset](https://codetorial.net/tensorflow/_images/fashion_MNIST_sample.png)
 
-Fashion MNIST 데이터셋은 위 그림과 같이 운동화, 셔츠, 샌들과 같은 작은 이미지들의 모음이며, 기본 MNIST 데이터셋과 같이 열 가지로 분류될 수 있는 28×28 픽셀의 이미지 70,000개로 이루어져 있습니다.
+Fashion MNIST 데이터셋은 위 그림과 같이 운동화, 셔츠, 샌들과 같은 작은 이미지들의 모음이며, 기본 MNIST 데이터셋과 같이 열 가지로 분류될 수 있는 28×28 픽셀의 이미지 70,000개로 이루어져 있습니다.  
 0 : T-shirt/top\
 1 : Trouser\
 2 : Pullover\
@@ -86,13 +86,25 @@ class CNN:
         test_loss, test_acc = self.model.evaluate(x_test, y_test)
         return test_loss, test_acc
 ```
-시각화를 통해 테스트 이미지의 예측값(실제값)을 확인
+
+```
+    figure = plt.figure(figsize=(20, 8))
+    for i, index in enumerate(np.random.choice(x_test.shape[0], size=15, replace=False)):
+      ax = figure.add_subplot(3, 5, i + 1, xticks=[], yticks=[])
+      ax.imshow(np.squeeze(x_test[index]))
+      predict_index = np.argmax(y_pred[index])
+      true_index = np.argmax(y_test[index])
+      ax.set_title("{} ({})".format(class_names[predict_index],
+                                    class_names[true_index]),
+                   color=("green" if predict_index == true_index else "red"))
+```
+테스트 이미지의 예측값(실제값)으로 정답의 경우 녹색 오답의 경우 적색으로 표시.
 ![image](https://github.com/KOO-96/Capston_Suwon-univ./assets/113090595/a081e1dd-599d-4deb-9d4a-da33294c78f2)
 
-학부생 딥러닝(자연어처리방식)에서 배운 것을 활용해보고자 벡터화를 통해 유사행렬을 만든 다음 유사한 이미지를 추출  
+학부생 딥러닝(자연어처리)에서 배운 것을 활용해보고자 벡터화를 통해 유사행렬을 만든 다음 유사한 이미지를 추출  
 Risk : 세션 종료로 인한 실행 불가능.   
 
-Risk 해결방안으로 이미지 원-핫 인코딩(One-hot encoding)을 통해 확인 -> Risk: 1과 0 값으로만 나온다, 정답이 틀린 경우도 1로 값이 나오는 경우가 발생.
+Risk 해결방안으로 이미지 원-핫 인코딩(One-hot encoding)을 통해 확인 -> Risk: 1과 0으로 정답이 나오게 되어 정답이 틀린 경우 사용이 힘들다 라는 판단
 
 Result
 ![image](https://github.com/KOO-96/Capston_Suwon-univ./assets/113090595/f06bdfb7-e756-4ef4-8865-cf9d01a97e25)
