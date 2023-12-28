@@ -1,4 +1,4 @@
-# Capston_Suwon-univ.
+# Capston_Suwon-univ-1.
 
 # week1 
 [8/30 ~ 9/6] [팀 병합]
