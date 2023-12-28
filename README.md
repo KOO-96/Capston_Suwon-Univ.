@@ -98,5 +98,5 @@ Result
 ![image](https://github.com/KOO-96/Capston_Suwon-univ./assets/113090595/f06bdfb7-e756-4ef4-8865-cf9d01a97e25)
 
  
-# week10 [ ~~ 12/6]
+# 최종발표 [ ~~ 12/6]
 > ![최종발표]()
