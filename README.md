@@ -18,11 +18,11 @@ week2 [9/6 ~ 9/13]
 # week3 [9/13 ~ 9/19] ~ week9 [10/18 ~ 10/25]  
 > 중간발표   
  
-objective: 패션 아이템을 활용한 추천 알고리즘  
-data : Fashion mnist dataset  
+Title: 패션 아이템을 활용한 추천 알고리즘  
+Data : Fashion mnist dataset  
 
 CNN딥러닝을 이용한 classification  
-result : 20epoch, 91%  
+Result : 20epoch, 91%  
 
 ---
 ### fashion_mnist dataset이란?
